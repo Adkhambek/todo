@@ -1,4 +1,147 @@
-body {
-    background-color: blue;
-    color: white;
+html {
+    font-size: 10px;
+    box-sizing: border-box;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    background-color: rgb(83, 62, 141);
+    padding: 1rem 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.box{
+    background-color: #fff;
+    border-radius: .5rem;
+    width: 35%;
+    padding: 2rem;
+} 
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+} 
+
+.form{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.input{
+    width: 90%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: 2px solid rgb(126, 126, 126);
+    outline: none;
+}
+
+.submit{
+    padding: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(83, 62, 141);
+    color: #fff;
+    transition: background-color .3s ease;
+}
+
+.submit .fas{
+    font-size: 2rem;
+} 
+
+.list{
+    display: block;
+    max-height: 30rem;
+    overflow-Y: auto;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.task{
+    background-color: rgb(214, 214, 214);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.task p{
+    max-height: 100%;
+    overflow-Y: auto;
+    margin-left: 1.5rem;
+} 
+
+.line-through{
+    text-decoration-line: line-through;
+}
+
+.action{
+    display: flex;
+    height: 100%;
+    
+}
+
+.action button{
+    width: 4.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.done{
+    background-color: rgb(83, 62, 141);
+}
+.remove{
+    background-color: rgb(223, 26, 26);
+}
+
+.footer{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.tasks-number{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.clear-all{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(83, 62, 141);
+    color: #fff;
+    transition: background-color .3s ease;
+} 
+
+.clear-all:hover, .submit:hover, .done:hover{
+    background-color: rgba(83, 62, 141,0.8);
+} 
+
+.remove:hover{
+    background-color: rgba(223, 26, 26,0.8);
+}
+
