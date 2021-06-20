@@ -1,22 +1,18 @@
 [
     {
         "id": 1,
-        "name": "getup 7.00AM"
+        "name": "wake up "
     },
     {
         "id": 2,
-        "name": "Go to School 8:00"
+        "name": "brush teeth"
     },
     {
         "id": 3,
-        "name": "study "
+        "name": "having dinner"
     },
     {
         "id": 4,
-        "name": "come at home"
-    },
-    {
-        "id": 5,
-        "name": "having lunch"
+        "name": "going to school"
     }
 ]

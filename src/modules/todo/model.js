@@ -29,4 +29,13 @@ const deleteTodo = todo => {
       return newTodos
 }
 
-module.exports = { fetchAll, insert, deleteTodo }
+const updateTodo = todo => {
+      let todos = fs.readFileSync(path.join(process.cwd(), 'src', 'database', 'todo.json'), 'utf-8')
+      todos = JSON.parse(todos)
+      const newTodo = todos.find(check => check.id == todo.id)
+      newTodo.name = todo.name
+      fs.writeFileSync(path.join(process.cwd(), 'src', 'database', 'todo.json'), JSON.stringify(todos, null, 4))
+      return newTodo
+}
+
+module.exports = { fetchAll, insert, deleteTodo, updateTodo }

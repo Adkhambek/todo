@@ -28,18 +28,20 @@ async function fetchTodos(){
                 liElement.remove()  
             }
         }
-        
         edit.onclick = () => {
             todoText.contentEditable = true
-            todoText.onkeyup = event => {
+            todoText.onkeypress = async event => {
                 if(event.keyCode == 13 && todoText.textContent.trim() != "") {
-                    let res = await request('/api/todo', 'PUT', {
+                     await request('/api/todo', 'PUT', {
                         id: todo.id,
                         name: todoText.textContent
                     })
+                    window.location.reload()
                 }
             }
         }
+        
+        
 
     }
 }

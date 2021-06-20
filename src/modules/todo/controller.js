@@ -21,4 +21,13 @@ const DELETE =  (req, res) => {
     }
 }
 
-module.exports = { GET, POST, DELETE }
+const PUT = (req, res) => {
+    const updateTodo = model.updateTodo(req.body)
+    if(updateTodo){
+        res.status(200).json({message: 'the todo was updated successfully'})
+    }else {
+        res.status(400).send('somthing wrong')
+    }
+}
+
+module.exports = { GET, POST, DELETE, PUT }
