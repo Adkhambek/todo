@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.route('/api/todo*')
       .get(GET)
+      .post(POST)
+      .delete(DELETE)
 
 module.exports = router
-
-//36:24

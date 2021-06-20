@@ -10,6 +10,8 @@ const {PORT, host} = require('./config')
 
 //moddleware
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 
 //modules 

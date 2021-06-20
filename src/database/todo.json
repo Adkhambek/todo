@@ -1,6 +1,22 @@
 [
     {
         "id": 1,
-        "name": "Exercises"
+        "name": "getup 7.00AM"
+    },
+    {
+        "id": 2,
+        "name": "Go to School 8:00"
+    },
+    {
+        "id": 3,
+        "name": "study "
+    },
+    {
+        "id": 4,
+        "name": "come at home"
+    },
+    {
+        "id": 5,
+        "name": "having lunch"
     }
 ]

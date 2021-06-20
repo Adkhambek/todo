@@ -107,8 +107,8 @@ body {
     color: #fff;
 }
 
-.done{
-    background-color: rgb(83, 62, 141);
+.edit{
+    background-color: rgb(255, 123, 0);
 }
 .remove{
     background-color: rgb(223, 26, 26);
